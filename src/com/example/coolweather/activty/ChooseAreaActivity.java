@@ -41,6 +41,8 @@ public class ChooseAreaActivity extends Activity{
 	private Province selectedProvince;
 	private City selectedCity;
 	private int currentLevel;
+	
+	private boolean isFromWeatherActivity;
 	   @Override
 	protected void onCreate(Bundle savedInstanceState){
 	super.onCreate(savedInstanceState);
