@@ -1,5 +1,6 @@
 package com.example.coolweather.service;
 
+import com.example.coolweather.receiver.AutoUpdateReceiver;
 import com.example.coolweather.util.HttpCallbackListener;
 import com.example.coolweather.util.HttpUtil;
 import com.example.coolweather.util.Utility;
@@ -35,10 +36,6 @@ public class AutoUpdateService extends Service{
 	manager.set(AlarmManager.ELAPSED_REALTIME_WAKEUP,triggerAtTime,pi);
 	return super.onStartCommand(intent,flags,startId);
 	}
-	/**
-	*
-	更新天气信息。
-	*/
 	private void updateWeather(){
 	SharedPreferences prefs=PreferenceManager.getDefaultSharedPreferences(this);
 	String weatherCode=prefs.getString("weather_code","");
