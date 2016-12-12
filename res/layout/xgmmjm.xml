@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/pc8">
+  
+ <TableRow >
+        <TextView 
+            android:layout_weight="1"
+            android:textColor="#00cc00"
+            android:text="原账号"/>
+        
+        <EditText 
+            android:id="@+id/editText1_xgmmjm"
+            android:layout_weight="20"/>
+    </TableRow>
+    
+    <TableRow >
+        <TextView 
+            android:layout_weight="1"
+            android:textColor="#00cc00"
+            android:text="新密码"/>
+        
+        <EditText 
+            android:id="@+id/editText2_xgmmjm"
+            android:layout_weight="20"/>
+    </TableRow>
+    
+    <TableRow >
+        <TextView 
+            android:layout_weight="1"
+            android:textColor="#00cc00"
+            android:text="确认新密码"/>
+        
+        <EditText 
+            android:id="@+id/editText3_xgmmjm"
+            android:layout_weight="20"/>
+    </TableRow>
+
+    <TableRow >
+    <Button
+        android:id="@+id/button1_xgmmjm"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:text="修改 " />
+      <Button
+        android:id="@+id/button2_xgmmjm"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:text="返回" />
+      </TableRow>
+    
+    
+
+</TableLayout>

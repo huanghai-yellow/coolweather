@@ -1,0 +1,52 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/bjt">
+<TableRow >
+        <TextView 
+            android:layout_weight="1"
+            android:text="账号"/>
+        
+        <EditText 
+            android:id="@+id/editText1_dlzc"
+            android:layout_weight="20"/>
+    </TableRow>
+    
+    <TableRow >
+        <TextView 
+            android:layout_weight="1"
+            android:text="密码"/>
+        
+        <EditText 
+            android:id="@+id/editText2_dlzc"
+            android:layout_weight="20"/>
+    </TableRow>
+    
+    <TableRow>
+        <CheckBox 
+            android:id="@+id/checkBox_dlzc"
+            android:layout_weight="1"/>
+        <TextView 
+            android:layout_weight="100"
+            android:gravity="center"
+            android:text="记住密码"/>
+    </TableRow>
+
+    <TableRow >
+    
+      <Button
+        android:id="@+id/button2_dlzc"
+        android:layout_weight="1"
+        android:text="注册" />
+      
+      <Button
+        android:id="@+id/button1_dlzc"
+        android:layout_weight="1"
+        android:text="登陆" />
+      </TableRow>
+  
+
+</TableLayout>
+
+

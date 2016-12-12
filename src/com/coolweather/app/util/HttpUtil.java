@@ -1,4 +1,4 @@
-package com.example.coolweather.util;
+package com.coolweather.app.util;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -15,6 +15,8 @@ public class HttpUtil {
 			HttpURLConnection connection=null;
 			try{
 			URL url=new URL(address);
+			 
+			
 			connection=(HttpURLConnection)url.openConnection();
 			connection.setRequestMethod("GET");
 			connection.setConnectTimeout(8000);
@@ -27,11 +29,13 @@ public class HttpUtil {
 			while((line=reader.readLine())!=null){
 			response.append(line);
 			}
-			if(listener!=null){			
+			if(listener!=null){
+ 
 			listener.onFinish(response.toString());
 			}
 			}catch(Exception e){
-			if(listener!=null){			
+			if(listener!=null){
+ 
 			listener.onError(e);
 			}
 			}finally{
@@ -40,7 +44,8 @@ public class HttpUtil {
 			}
 			}
 			}
+
 			}).start();
 			}
-			
-}
+			}
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pc14">
+   <TableRow >
+        <TextView 
+            android:layout_weight="1"
+            android:text="账号"/>
+        
+        <EditText 
+            android:id="@+id/editText1_zcjm"
+            android:layout_weight="12"/>
+    </TableRow>
+    
+    <TableRow >
+        <TextView 
+            android:layout_weight="1"
+            android:text="密码"/>
+        
+        <EditText 
+            android:id="@+id/editText2_zcjm"
+            android:layout_weight="12"/>
+    </TableRow>
+
+    <TableRow >
+    <Button
+        android:id="@+id/button1_zcjm"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:text="保存" />
+      <Button
+        android:id="@+id/button2_zcjm"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:text="返回" />
+      </TableRow>
+
+</TableLayout>
